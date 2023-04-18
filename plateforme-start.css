@@ -151,7 +151,7 @@ h2{
 }
 
 @media (width< 700px) {
-    * :not(title){
+    body :not(title){
         display:block !important;
     }
     

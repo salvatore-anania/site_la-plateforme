@@ -28,3 +28,10 @@
 #news_grid p{
     margin: 10%;
 }
+
+@media (width< 700px) {
+    body :not(title){
+        display:block !important;
+    }
+    
+  }
