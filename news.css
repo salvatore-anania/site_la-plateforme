@@ -1,0 +1,30 @@
+#video_actu *{
+    text-align: unset ;
+    color: white;
+    flex: 1;
+    width: unset !important;
+    margin-inline: 5%;
+}
+
+#video_actu {
+    display: flex;
+    padding: 10%;
+    background-color: #275fa0;
+}
+
+#news_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-inline: 15%;
+    margin-block: 5%;
+    font-size: x-large;
+}
+
+#news_grid div{
+    margin: 8%;
+}
+
+#news_grid p{
+    margin: 10%;
+}

@@ -1,0 +1,96 @@
+#message{
+    display: flex;
+    justify-content: center;
+    background-color: #1e3067;
+    padding-inline: 10%;
+}
+
+#texte {
+    flex: 1;
+    padding-inline-end: 5%;
+    margin-bottom: 2%;
+}
+
+h2{
+    all: unset;
+    color: black;
+    font-size: 2.75em;
+}
+
+#texte p{
+    font-size: x-large;
+}
+
+#texte p:last-of-type{
+    color: white;
+}
+
+#texte p:first-of-type{
+    color: orange;
+}
+
+#formulaire{
+    padding-top: 2%;
+    flex: 1;
+    background-color: white;
+    margin-block: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+#formulaire > *{
+    margin-inline: 10%;
+    align-self: stretch;
+    height: 5%;
+    margin-block: 2%;
+}
+
+.entry{
+    display: flex;
+}
+
+.entry:not(:last-of-type) *{
+    flex:1;
+    
+}
+
+.entry:not(:last-of-type) *:not(:last-child){
+    margin-right: 2%;
+}
+
+.entry:last-of-type {
+    align-items: center;
+}
+
+#textarea{
+    height: 20%;
+}
+
+#map{
+    padding-inline: 15%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 2%;
+}
+
+iframe{
+    align-self: stretch;
+    margin-bottom: 2%;
+}
+
+#logo_map{
+    display: flex;
+}
+
+#logo img{
+    margin: 5%;
+}
+
+@media (width< 700px) {
+    * :not(title){
+        display:block !important;
+    }
+    
+  }

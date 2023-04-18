@@ -1,0 +1,131 @@
+
+#aws_head{
+    display: flex;
+    background-color: black;
+}
+
+section a{
+    all: unset;
+    font-size: xx-large;
+    background-color: orangered !important;
+}
+
+h2{
+    all: unset;
+    font-size: 2.5em;
+    margin-bottom: 5%;
+}
+
+section{
+    padding-inline: 20%;
+    padding-block: 5%;
+}
+
+section:not(#aws_head){
+    color: black;
+}
+
+.inscri{
+    padding-top: 5%;
+    font-size: x-large;
+}
+
+#aws_text{
+    width: 50%;
+    padding-block: 5%;
+}
+
+#image_logo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    
+}
+#image_logo :last-child{
+    position: absolute;
+    width: 25%;
+    top: 10%;
+    right: 0;
+}
+
+#prez {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prez p{
+    text-align: center;
+    margin-top: 0;
+}
+
+strong{
+    display: flex;
+    font-size: xx-large;
+}
+
+#prez div{
+    display: flex;
+    font-size: large;
+}
+
+#prez div :first-child{
+    margin-right: 5%;
+}
+
+#explication{
+    display: flex;
+    background-color: #f2f2f2;;
+}
+
+#explication *{
+    flex: 1;
+    
+}
+
+
+#explication > :nth-child(2){
+    margin-inline: 25%;
+    
+}
+
+.cloud{
+    background-color: #e17b32;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vignette{
+    display: grid;
+    grid-gap: 5%;
+    grid-column-gap: 10%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.vignette:last-of-type{
+    grid-template-rows: unset;
+} 
+
+.vignette div{
+    background-color: white;
+}
+
+.texte{
+    padding: 10%;
+}
+
+.cloud:last-of-type{
+    background-color: #f2f2f2;
+}
+
+
+@media (width< 700px) {
+    * :not(title){
+        display:block !important;
+    }
+    
+  }

@@ -1,0 +1,118 @@
+.contenu{
+    display: flex;
+    font-size: 1.25em;
+    justify-content: space-between;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15%;
+    padding-block: 2%;
+    color: gray;
+}
+
+h2{
+    all: unset;
+    font-size: 2.75em;
+    color: black !important;
+}
+
+
+section p{
+    flex: 1;
+}
+
+section p:not(:last-of-type){
+    
+    padding-right: 5%;
+}
+
+article h2{
+    margin-bottom: 5%;
+}
+
+
+
+#subgrid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+#subgrid img{
+    margin:10%;
+    height: 5vw;
+}
+
+.trois{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.trois img{
+    width: 18vw;
+    height: 10vw;
+    margin-top: auto;
+}
+
+#certif{
+    background-color: #f6f6f6;
+    
+}
+
+#certif p{
+    flex: unset;
+}
+
+#certif img{
+    margin-top:auto;
+}
+
+#certif .contenu div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#certif .contenu div:not(:first-child){
+    padding-left: 2% ;
+    
+}
+
+#certif .contenu div:not(:last-child){
+    padding-right: 2% ; 
+}
+
+#qui-presentation{
+    background-color: unset;
+    align-items: flex-start;
+    font-size: large;
+}
+
+
+#qui-video{
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+#qui-video p{
+    width: 40vh !important;
+}
+
+iframe{
+    object-fit: contain;
+    width: 40vh !important;
+    height: 20vh !important;
+    flex: 1;
+}
+
+@media (width< 700px) {
+    * :not(title){
+        display:block !important;
+    }
+    
+  }

@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     color: #336699;
@@ -164,7 +165,7 @@ h2{
     width: 100vw;
 }
 
-iframe{
+iframe:not(#map){
     object-fit: contain;
     width: 90vh;
     height: 45vh;
@@ -250,3 +251,10 @@ footer div{
 #endpage a{
     margin: unset;
 }
+
+@media (width< 700px) {
+    * :not(title){
+        display:block !important;
+    }
+    
+  }

@@ -1,0 +1,158 @@
+section:not(#image_start){
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15%;
+    padding-block: 2%;
+    align-items: center;
+}
+
+section:nth-child(even){
+    background-color: #f4f4f4;
+}
+
+section:nth-child(odd){
+    background-color: white;
+}
+
+
+
+.grille{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+}
+
+
+h2{
+    all: unset;
+    font-size: 2.75em;
+    color: black;
+}
+
+#image_start{
+    padding-block: 2%;
+    background-color: #ffe85f !important;
+}
+
+#container{
+    position: relative;
+    text-align: right;
+    margin-inline: 15%;
+    margin-block: 2%;
+}
+
+#cadre{
+    position: absolute;
+    left: 0;
+    top:15%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#cadre img{
+    margin: 3%;
+    width: 25%;
+    margin-left: -3%;
+}
+
+#cadre > div{
+    display: flex;
+}
+
+#cadre div div{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+#cadre p{
+    margin: 0;
+    padding-inline: 2%;
+    
+}
+
+
+#cadre p:first-of-type{
+    color: black;
+    text-align: left;
+    background-color: white;
+    font-size: 2.5em;
+    border-style:solid;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+}
+
+#cadre p:last-of-type{
+    background-color: black;
+    color: white;
+    align-self:flex-end;
+    font-size: 1.25em;
+    padding-bottom: 2%;
+}
+
+#cadre h2{
+    all: unset;
+    background-color: black;
+    color: white;
+    font-size: 5em;
+}
+
+#cadre a{
+    background-color: black;
+    color: white;
+    align-self: center;
+    font-size: 1.5em;
+    padding: 2%;
+    border-color: white;
+    border-width: 10px;
+    border-style: solid;
+}
+
+#prez_logo{
+    flex-direction: row !important;
+    justify-content: space-around;
+}
+
+#prez_logo > div{
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+#prez_logo div p,#prez_logo div h3{
+    width: fit-content;
+    margin-left: 20%;
+    margin-block: 2%;
+    flex: 1;
+    align-self: center;
+}
+
+#jeanne{
+    display: flex;
+    padding: 5%;
+    background-color: #f4f4f4;
+}
+
+#jeanne > div{
+    padding: 5%;
+}
+#chiffres{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5%;
+}
+
+#chiffres > div{
+    border-radius: 20px;
+    background-color: #ffe85f;
+    padding: 10%;
+}
+
+@media (width< 700px) {
+    * :not(title){
+        display:block !important;
+    }
+    
+  }
